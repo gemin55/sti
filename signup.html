@@ -1,0 +1,259 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Website</title>
+
+    <!-- Bootstrap -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+</script>
+
+  </head>
+
+  <body>
+    <div class="container-fluid">
+       <!-- Global navigation -->
+      <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler ms-auto"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapsibleNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a href="#" class="nav-link"
+                  ><i class="fas fa-home"></i> Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link"
+                  ><i class="fas fa-info-circle"></i> About</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  href="#"
+                  class="nav-link active dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  ><i class="fas fa-concierge-bell"></i> Services</a
+                >
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="04_05.html" class="dropdown-item">Menu 1</a>
+                  </li>
+                  <li>
+                    <a href="" class="dropdown-item">Menu 1</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a href="" class="dropdown-item">Menu 1</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a
+                  href="03_01.html"
+                  class="nav-link"
+                  ><i class="fas fa-images"></i> Gallery</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link disabled"  tab-index="-1"
+                  aria-disabled="true"
+                  ><i class="fas fa-envelope"></i> Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <!-- row 1 -->
+     <header class="row">
+        <div class="col-lg-6 col-sm-5">
+    <a href="#"><img src="/img/logo.png" alt="Wisdom Pets. click for home."
+    /></a> 
+</div>
+<div class="col-lg-6 col-sm-7">
+    <img src="img/animals.jpg" alt="" class="d-none d-md-block img-fluid" />
+</div>
+     </header>
+    <!-- row 2 -->
+<section class="row bg-dark shadow-lg mb-3">
+        <div class="col-12 p-5">
+          <h1 class="text-uppercase display-1 text-center text-warning">We treat your pets like
+             <span class="badge bg-primary border border-4 border-warning border-top-0">our own</span></h1>
+
+          <p class="fw-bold fst-italic text-center opacity-75 lead bg-warning">
+            At <abbr aria-label="Wisdom Pet Medicine" title="Wisdom Pet Medicine" class="">WPM</abbr>, we strive to blend the best in traditional
+            and alternative healing techniques to diagnose and treat companion
+            animals, including dogs, cats, birds, reptiles, rodents, and fish.
+          </p>
+        </div>
+      </section>
+    
+      <div id="alertBox"  role="alert" class="col-12 rounded-pill alert alert-success alert-dismissible fade show">
+		<strong id="alertmsg">Success! </strong>
+		
+  <button class="btn-close" data-bs-dismiss="alert"></button>    
+  </div>
+
+
+    <!-- row 3 -->
+     <main class="row mt-5">
+        <form
+          class="container"
+          id="frmsignup"
+          method="post">
+          <div class="row">
+            <div class="col-md-5 pt-5">
+              <img src="../img/signup.png" class="img-fluid h-50" />
+            </div>
+            <div class="col-md-6 pt-5 offset-md-1">
+              <h3></h3>
+              <div class="mb-3">
+                <label for="txtname" class="form-label">Full name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="txtname"
+                  id="txtname"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="txtnic" class="form-label">NIC</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="txtnic"
+                  id="txtnic"
+                />
+                <span id="nicmsg"></span>
+                <img id="inic" src="" />
+              </div>
+              <div id="phone1" class="mb-3">
+                <label for="txtmob1" class="form-label">Mobile number</label>
+                <span
+                  ><button
+                    type="button"
+                    id="btnaddphone"
+                    class="btn btn-primary btn-sm"
+                  >
+                    &#43;
+                  </button></span
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  name="txtmob"
+                  id="txtmob1"
+                />
+              </div>
+              <div id="email" class="mb-3">
+                <label for="txtemail" class="form-label">Email</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="txtemail"
+                  id="txtemail"
+                />
+                <span id="emailmsg"></span>
+                <img id="iemail" src="" />
+              </div>
+              <div class="mb-3">
+                <label for="txtdob" class="form-label">Date of Birth</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="dob"
+                  id="txtdob"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="txtpass" class="form-label">Password</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  name="txtpass"
+                  id="txtpass" autocomplete="new-password"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="txtcpass" class="form-label"
+                  >Confirm Password</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  name="txtcpass"
+                  id="txtcpass" autocomplete="new-password"
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="txtcap" class="form-label">Captcha</label>
+                <input
+                  type="text"
+                  readonly
+                  disabled
+                  class="form-control"
+                  name="txtcap"
+                  id="txtcap"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="txtcapm" class="form-label">Captcha</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="txtcapm"
+                  id="txtcapm"
+                />
+                <span id="capmsg"></span>
+                <img id="errcap" src="" />
+              </div>
+              <button
+                type="submit"
+                name="btnsignup"
+                class="col-12 btn btn-primary d-block"
+              >
+                Register
+              </button>
+              <p></p>
+              <button
+                type="submit"
+                name="btncancel"
+                class="col-12 btn btn-danger d-block">
+                Cancel
+              </button>
+            </div>
+          </div>
+        </form>
+</main>
+    <!-- row 4 -->
+    <footer class="row mt-5">
+        <div class="col-12 text-center">
+    <p>
+      This not a real veterinary medicine site, and is not meant to diagnose or
+      offer treatment. Please see your veterinarian for all matters related to
+      your pet's health.
+    </p>
+    <p class="small">Wisdom Pet Medicine is a training brand</p>
+    <p  id="result"></p>
+        </div>
+</footer>
+</div>
+    <!-- javascript -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+  </body>
+</html>
